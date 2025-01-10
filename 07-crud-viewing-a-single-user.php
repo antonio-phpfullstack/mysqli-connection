@@ -1,5 +1,5 @@
 <?php
-$conn = require '06-connection.php';
+$conn = require '07-connection.php';
 $result = $conn->query("SELECT * FROM users");
 $users = $result->fetch_all(MYSQLI_ASSOC);
 ?>
