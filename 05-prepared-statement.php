@@ -18,6 +18,12 @@ $id2 = $input2;
 $sql = "SELECT * FROM users WHERE id > ? OR id = ?";
 
 $stmt = $conn->prepare($sql);
+/*
+i-> integer
+d-> double
+s-> string
+b-> blob
+ */
 $stmt->bind_param("ii", $id1, $id2);
 $stmt->execute();
 
